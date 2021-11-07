@@ -5,6 +5,8 @@ import {
   GoogleAuthProvider,
   FacebookAuthProvider,
 } from "firebase/auth";
+import { CgGoogle } from 'react-icons/cg';
+import { FaFacebook } from 'react-icons/fa';
 
 import classes from './loginForm.module.css';
 
@@ -33,15 +35,15 @@ const LoginForm = () => {
     }
 
     return (
-      <form onSubmit={e => e.preventDefault()} className={classes.form}>
-        <h3>Login</h3>
+      <form onSubmit={(e) => e.preventDefault()} className={classes.form}>
+        <h3>Log in</h3>
         <div className={classes.input}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
             placeholder="email"
             id="email"
-            class="email"
+            className="email"
             ref={emailRef}
           />
         </div>
@@ -51,23 +53,31 @@ const LoginForm = () => {
             type="password"
             placeholder="Username"
             id="password"
-            class="password"
+            className="password"
             ref={passwordRef}
           />
         </div>
         <div className={classes.button}>
           <button type="submit" onClick={onLoginHandler}>
-            Login
+            Log in
           </button>
         </div>
         <div className={classes.button}>
-          <button type="button" onClick={SignInWithGoogle} className={classes.button_google}>
-            Login with Google
+          <button
+            type="button"
+            onClick={SignInWithGoogle}
+            className={classes.button_google}
+          >
+            Log in with Google <CgGoogle />
           </button>
-          <button type="button" onClick={SignInWithFacebook} className={classes.button_facebook}>
-            Login with Facebook
+          <button
+            type="button"
+            onClick={SignInWithFacebook}
+            className={classes.button_facebook}
+          >
+            Log in with Facebook <FaFacebook />
           </button>
-        </div>    
+        </div>
       </form>
     );
 }
