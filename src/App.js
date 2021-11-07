@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import LoginForm from './components/Form/logInForm';
+
+import classes from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className={classes.App}>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/login">
+          </Redirect>
+            <p>First page</p>
+        </Route>        
+        <Route path="/login">
+          <LoginForm/>
+        </Route>
+        <Route path="*"><p>404 error: Page not error</p></Route>
+      </Switch>
+      </div>
   );
 }
 

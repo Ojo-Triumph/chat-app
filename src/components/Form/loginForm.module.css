@@ -1,0 +1,68 @@
+.form {
+    width: 50%;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ccc;
+    box-shadow: 10px 10px 10px #11113f56;
+    border-radius: 1rem;
+}
+
+.form h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #11113f;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    color: #11113f;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+
+.input input {
+    margin-bottom: 2rem;
+    padding: .8rem;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button button {
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background: #11113f;
+    color: #fff;
+    cursor: pointer;
+    font-size: .99rem;
+}
+
+.button:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.button .button_google {
+    background: #DB4437;
+}
+
+.button .button_facebook {
+    background: #4267B2;
+}
