@@ -7,7 +7,7 @@ Contact me using my twitter or comment here
 
 ### Branches
 
-The main is the actual chat-app which currently has issues which is being fixed and there is a practice chat-app which is similar to the main branch but with different UIs and layout for code
+The master is the actual chat-app which currently has issues which is being fixed and there is a practice chat-app which is similar to the main branch but with different UIs and layout for code
 
 
 ## Available Scripts
