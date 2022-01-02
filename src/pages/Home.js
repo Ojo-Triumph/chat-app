@@ -83,7 +83,6 @@ const Home = () => {
       const snap = await uploadBytes(imgRef, img);
       const dlUrl = await getDownloadURL(ref(storage, snap.ref.fullPath));
       url = dlUrl;
-      console.log(url);
     }
 
     await addDoc(collection(db, 'messages', id, 'chat'), {

@@ -42,7 +42,7 @@ const Profile = () => {
           });
           setImg('');
         } catch (error) {
-          console.log(error.message);
+          // console.log(error.message);
         }
       };
       uploadImg();
@@ -61,7 +61,7 @@ const Profile = () => {
         navigate('/');
       }
     } catch (error) {
-      console.log(error.message);
+      // console.log(error.message);
     }
   };
   return user ? (
