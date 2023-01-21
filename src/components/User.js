@@ -40,7 +40,7 @@ const User = ({ user1, user, selectUser, chat }) => {
         </div>
         {data && (
           <p className='truncate'>
-            <strong>{data.from === user1 ? 'Me:' : null}</strong>
+            <strong>{data?.from === user1 ? 'Me:' : null}</strong>
             {data.text}
           </p>
         )}
