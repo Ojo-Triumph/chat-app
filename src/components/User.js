@@ -30,7 +30,7 @@ const User = ({ user1, user, selectUser, chat }) => {
               className='avatar'
             />
             <h4>{user.name}</h4>
-            {data && data.from !== user1 && data?.unread && (
+            {data && data?.from !== user1 && data?.unread && (
               <small className='unread'>New</small>
             )}
           </div>
